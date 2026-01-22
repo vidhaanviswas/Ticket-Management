@@ -416,7 +416,7 @@ export default function TicketDetailPage() {
               <div className={styles.attachmentsHeader}>
                 <div className={styles.sectionTitle}>Attachments</div>
                 <div className={styles.hintText}>
-                  Allowed: PNG/JPEG/WEBP/PDF • Max 10MB per file
+                  Allowed: PNG/JPEG/WEBP/PDF • Max 50KB per file (Demo Limit)
                 </div>
               </div>
 

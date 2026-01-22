@@ -40,7 +40,7 @@ public class AttachmentService {
             TicketRepository ticketRepository,
             UserRepository userRepository,
             @Value("${app.attachments.storage-path:uploads}") String storagePath,
-            @Value("${app.attachments.max-bytes:10485760}") long maxBytes,
+            @Value("${app.attachments.max-bytes:51200}") long maxBytes,
             @Value("${app.attachments.allowed-content-types:image/png,image/jpeg,image/webp,application/pdf}") String allowedTypes
     ) {
         this.attachmentRepository = attachmentRepository;
@@ -107,7 +107,11 @@ public class AttachmentService {
                 continue;
             }
             if (file.getSize() > maxBytes) {
-                throw new RuntimeException("File too large (max " + maxBytes + " bytes)");
+                long maxKB = maxBytes / 1024;
+                throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,
+                    String.format("File size exceeds the demo limit of %d KB. This is a demonstration application with a %d KB file size limit.", maxKB, maxKB)
+                );
             }
 
             String contentType = Optional.ofNullable(file.getContentType()).orElse("application/octet-stream");
