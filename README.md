@@ -642,7 +642,7 @@ This application implements several security measures to prevent common vulnerab
 
 ### ⚠️ Important Security Note
 
-**Public registration (`/api/auth/register`) does NOT accept role parameters.** All users are registered as `USER` role only. Any attempt to register with `ADMIN` or `SUPPORT_AGENT` role will be rejected with a clear error message. Only authenticated administrators can create users with elevated roles via the admin panel (`/api/admin/users`).
+**Public registration (`/api/auth/register`) does NOT accept role parameters.** All users are registered as `USER` role only. Any attempt to register with `ADMIN` or `SUPPORT_AGENT` role will be rejected with a clear error message. Only authenticated administrator can create users with elevated roles via the admin panel (`/api/admin/users`).
 
 ### Security Testing
 
