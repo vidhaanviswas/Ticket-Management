@@ -12,6 +12,8 @@ A full-stack ticketing system built with Spring Boot and Next.js, designed for e
 
 ### 🔗 Application Links
 
+> 💡 **Tip**: Right-click links (or Ctrl+Click / Cmd+Click) to open in a new tab
+
 - **Frontend (Live)**: <a href="https://ticket-management-app.up.railway.app/" target="_blank" rel="noopener noreferrer">https://ticket-management-app.up.railway.app/</a>
 
 ### 🔑 Demo Login Credentials
