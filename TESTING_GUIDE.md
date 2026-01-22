@@ -17,7 +17,7 @@ Your frontend pages are loading successfully:
    - Password: `test123456`
 3. Click "Register"
 4. **Expected Results:**
-   - ✅ **Success**: Redirects to login or dashboard, shows success message
+   - ✅ **Success**: Redirects to login or dashboard, shows success message.
    - ❌ **Error**: Check browser console (F12) for errors
 
 ### Test 2: Check Browser Console
