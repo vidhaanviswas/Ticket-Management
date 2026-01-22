@@ -9,6 +9,14 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Ticketing System',
   description: 'Full-stack ticketing system for IT support',
+  icons: {
+    icon: [
+      { url: '/icon1.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/icon1.png', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({
