@@ -139,7 +139,7 @@ psql --version   # Should show PostgreSQL 12+
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Ticket-Management.git
+git clone https://github.com/vidhaanviswas/Ticket-Management.git
 cd Ticket-Management
 ```
 
@@ -238,15 +238,6 @@ Railway provides native Java support and is the easiest deployment option.
 4. Deploy backend and frontend services
 5. Configure environment variables
 
-### Render
-
-Alternative deployment platform (requires manual Java configuration).
-
-📖 **See**: [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
-
-### Other Platforms
-
-📖 **See**: [ALTERNATIVES.md](./ALTERNATIVES.md) for other deployment options.
 
 ## 📚 API Documentation
 
@@ -584,7 +575,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👨‍💻 Authors
 
-- **Your Name** - *Initial work*
+- **Vidhaan Viswas**
 
 ## 🙏 Acknowledgments
 
@@ -597,7 +588,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - **Documentation**: Check the `/Documentation` folder
 - **Issues**: Open an issue on GitHub
-- **Email**: your-email@example.com
+- **Web**: https://www.vidhaanviswas.com
 
 ## 🔮 Future Enhancements
 
