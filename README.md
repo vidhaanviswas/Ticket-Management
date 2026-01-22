@@ -12,7 +12,7 @@ A full-stack ticketing system built with Spring Boot and Next.js, designed for e
 
 ### 🔗 Application Links
 
-- **Frontend (Live)**: [https://ticket-management-app.up.railway.app/](https://ticket-management-app.up.railway.app/)
+- **Frontend (Live)**: <a href="https://ticket-management-app.up.railway.app/" target="_blank" rel="noopener noreferrer">https://ticket-management-app.up.railway.app/</a>
 
 ### 🔑 Demo Login Credentials
 
@@ -40,7 +40,7 @@ You can use these credentials to explore the application:
 
 ### 🚀 Quick Start
 
-1. Visit the [Live Application](https://ticket-management-app.up.railway.app/)
+1. Visit the <a href="https://ticket-management-app.up.railway.app/" target="_blank" rel="noopener noreferrer">Live Application</a>
 2. Click on **"Login"** or use one of the demo credentials above
 3. Explore the dashboard, create tickets, and test all features!
 
@@ -273,7 +273,7 @@ Railway provides native Java support and is the easiest deployment option.
 📖 **See**: [RAILWAY_DEPLOYMENT.md](./RAILWAY_DEPLOYMENT.md) for detailed instructions.
 
 **Quick Steps:**
-1. Sign up at [railway.app](https://railway.app)
+1. Sign up at <a href="https://railway.app" target="_blank" rel="noopener noreferrer">railway.app</a>
 2. Create new project from GitHub
 3. Add PostgreSQL database
 4. Deploy backend and frontend services
@@ -660,7 +660,7 @@ POST /api/auth/register
 
 - **Documentation**: Check the `/Documentation` folder
 - **Issues**: Open an issue on GitHub
-- **Web**: https://www.vidhaanviswas.com
+- **Web**: <a href="https://www.vidhaanviswas.com" target="_blank" rel="noopener noreferrer">https://www.vidhaanviswas.com</a>
 
 ## 🔮 Future Enhancements
 
