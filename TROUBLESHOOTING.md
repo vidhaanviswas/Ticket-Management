@@ -1,6 +1,6 @@
 # Troubleshooting Guide - Railway Deployment
 
-## Common Issues and Solutions
+## Common Issues with Solutions
 
 ### Issue 1: 404 Error When Calling Backend API
 
