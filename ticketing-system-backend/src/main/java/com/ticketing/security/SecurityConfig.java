@@ -61,6 +61,16 @@ public class SecurityConfig {
         http.cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .csrf(csrf -> csrf.disable())
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .headers(headers -> headers
+                // Prevent clickjacking attacks
+                .frameOptions(frameOptions -> frameOptions.deny())
+                // Prevent MIME type sniffing
+                .contentTypeOptions(contentTypeOptions -> {})
+                // Enable HSTS (HTTP Strict Transport Security)
+                .httpStrictTransportSecurity(hstsConfig -> hstsConfig
+                    .maxAgeInSeconds(31536000) // 1 year
+                )
+            )
             .authorizeHttpRequests(auth -> auth
                 // Allow CORS preflight requests through security
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
