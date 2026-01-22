@@ -43,7 +43,7 @@ export default function LoginPage() {
         <div className={styles.brand}>
           <h1 className={styles.title}>Welcome back</h1>
           <p className={styles.subtitle}>Sign in to continue to the ticketing system.</p>
-          <p className={styles.subtitle}>For credenteials please refer <a href="https://github.com/vidhaanviswas/Ticket-Management/blob/main/README.md" target="_blank" rel="noopener noreferrer">Readme File</a></p>
+          <p className={styles.subtitle}>For demo credenteials please refer <a href="https://github.com/vidhaanviswas/Ticket-Management/blob/main/README.md" target="_blank" rel="noopener noreferrer">Readme File!</a></p>
         </div>
 
         {error && (
