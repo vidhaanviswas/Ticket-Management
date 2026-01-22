@@ -2,6 +2,10 @@
 
 This guide will help you deploy the Ticketing System to Render platform.
 
+> ⚠️ **Note**: Render doesn't support Java/Spring Boot natively in Blueprint (render.yaml).  
+> **For easier Java deployment, consider using Railway.app instead** - see `RAILWAY_DEPLOYMENT.md`  
+> **For other alternatives, see** `ALTERNATIVES.md`
+
 ## Prerequisites
 
 1. A GitHub account with this repository

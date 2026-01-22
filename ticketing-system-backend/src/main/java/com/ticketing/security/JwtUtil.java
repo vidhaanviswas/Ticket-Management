@@ -19,7 +19,16 @@ public class JwtUtil {
     private Long expiration;
     
     private SecretKey getSigningKey() {
-        return Keys.hmacShaKeyFor(secret.getBytes());
+        // Validate secret length - must be at least 32 bytes (256 bits) for HS256
+        byte[] secretBytes = secret.getBytes();
+        if (secretBytes.length < 32) {
+            throw new IllegalArgumentException(
+                "JWT secret must be at least 32 bytes (256 bits) long. " +
+                "Current length: " + secretBytes.length + " bytes. " +
+                "Generate a secure secret using: openssl rand -base64 32"
+            );
+        }
+        return Keys.hmacShaKeyFor(secretBytes);
     }
     
     public String generateToken(String username) {
