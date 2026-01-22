@@ -86,6 +86,8 @@ You can use these credentials to explore the application:
 - 🛡️ **Role-Based Access Control** - Fine-grained permissions
 - 🔐 **Password Encryption** - BCrypt password hashing
 - 🌐 **CORS Configuration** - Secure cross-origin requests
+- 🚫 **Privilege Escalation Prevention** - Public registration always creates USER role only
+- ✅ **Input Validation** - Comprehensive validation and sanitization
 
 ## 🛠️ Tech Stack
 
@@ -622,6 +624,37 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Next.js team for the amazing React framework
 - Railway for seamless deployment experience
 - All contributors and users of this project
+
+## 🔒 Security
+
+This application implements several security measures to prevent common vulnerabilities:
+
+- ✅ **Role Escalation Prevention**: Public registration always creates USER role, regardless of role parameter
+- ✅ **Input Validation**: Username, email, and password validation with format checks
+- ✅ **JWT Authentication**: Secure token-based authentication
+- ✅ **Password Encryption**: BCrypt hashing with 10 rounds
+- ✅ **File Upload Security**: File type and size validation
+- ✅ **CORS Protection**: Restricted to configured frontend origins only
+
+📖 **See**: [SECURITY.md](./SECURITY.md) for detailed security documentation.
+
+### ⚠️ Important Security Note
+
+**Public registration (`/api/auth/register`) does NOT accept role parameters.** All users are registered as `USER` role only. Any attempt to register with `ADMIN` or `SUPPORT_AGENT` role will be rejected with a clear error message. Only authenticated administrators can create users with elevated roles via the admin panel (`/api/admin/users`).
+
+### Security Testing
+
+Try to register with ADMIN role via Postman:
+```json
+POST /api/auth/register
+{
+  "username": "hacker",
+  "email": "h@h.com",
+  "password": "pass123",
+  "role": "ADMIN"
+}
+```
+**Expected Result**: `403 Forbidden` - "Role assignment is not allowed during public registration..."
 
 ## 📞 Support
 
