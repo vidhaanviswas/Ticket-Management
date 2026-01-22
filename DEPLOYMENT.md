@@ -28,12 +28,14 @@ This guide will help you deploy the Ticketing System to Render platform.
 2. Connect your GitHub repository
 3. Configure the service:
    - **Name**: `ticketing-backend` (or your preferred name)
-   - **Environment**: `Java`
+   - **Environment**: `Java` ⚠️ **IMPORTANT: Select "Java", NOT "Node" or "Auto-detect"**
    - **Region**: Same as database
    - **Branch**: `main` (or your default branch)
-   - **Root Directory**: `ticketing-system-backend`
+   - **Root Directory**: `ticketing-system-backend` ⚠️ **Must be set correctly**
    - **Build Command**: `mvn clean package -DskipTests`
    - **Start Command**: `java -jar target/ticketing-system-1.0.0.jar`
+   
+   **⚠️ Common Mistake**: If you see "mvn: command not found" error, it means the Environment is set to "Node" instead of "Java". Go to Settings and change it to "Java".
 4. Add Environment Variables:
    - `DATABASE_URL` - Use the connection string from your PostgreSQL database
    - `JWT_SECRET` - Generate a strong random string (e.g., use an online generator or `openssl rand -base64 32`)
