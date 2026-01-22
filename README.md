@@ -8,8 +8,47 @@ A full-stack ticketing system built with Spring Boot and Next.js, designed for e
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-12+-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 
+## 🌐 Live Deployment
+
+### 🔗 Application Links
+
+- **Frontend (Live)**: [https://ticket-management-app.up.railway.app/](https://ticket-management-app.up.railway.app/)
+
+### 🔑 Demo Login Credentials
+
+You can use these credentials to explore the application:
+
+#### 👤 Regular User
+- **Username**: `user1`
+- **Password**: `user1`
+- **Role**: USER
+- **Access**: Create and manage own tickets
+
+#### 🛠️ Support Agent
+- **Username**: `sa1`
+- **Password**: `sa1`
+- **Role**: SUPPORT_AGENT
+- **Access**: View all tickets, assign tickets, update statuses
+
+#### 👨‍💼 Admin
+- **Username**: `Contact Me!`
+- **Password**: `Contact Me!`
+- **Role**: ADMIN
+- **Access**: Full system access including user management
+
+> ⚠️ **Note**: These are demo accounts. Please do not modify or delete existing data. Feel free to create your own account using the registration page!
+
+### 🚀 Quick Start
+
+1. Visit the [Live Application](https://ticket-management-app.up.railway.app/)
+2. Click on **"Login"** or use one of the demo credentials above
+3. Explore the dashboard, create tickets, and test all features!
+
+---
+
 ## 📋 Table of Contents
 
+- [Live Deployment](#-live-deployment)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
